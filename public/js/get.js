@@ -6,6 +6,7 @@ const btn = document.getElementById("btn");
 
 
 const fetchIdTodo = async () => {
+
   const getTodos = await fetch(url)
   let myTodo =  await getTodos.json()
   return myTodo
@@ -18,6 +19,7 @@ const ReuseFunction = () => {
 }
 
 const get = async (data) => {
+
   tasker2.style.display = "none"
    data = await ReuseFunction()
    data.status.forEach((data) => {
@@ -33,7 +35,10 @@ const get = async (data) => {
   </div>
     `
   })
-   return data
+  setTimeout(() => {
+    return data
+  }, 5000)
+  
 }
 get()
 function check(){
@@ -50,13 +55,17 @@ function check(){
 function loading()
 
 {
-  console.log("i am loading")
-  const me = document.getElementById("me")
-  me.innerHTML = "<p> i am loading </p>"
+  setTimeout(() => {
+    const me = document.getElementById("me")
+    me.innerHTML = "<p> i am loading </p>"
+  }, 3000)
+ 
+ 
 }
 
 async function changing() 
 {
+  
   tasker.style.display = "none"
    const change = document.getElementById("search").value
    if (change === '') 
