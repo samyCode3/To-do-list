@@ -59,6 +59,10 @@ function loading()
     const me = document.getElementById("me")
     me.innerHTML = "<p> i am loading </p>"
   }, 1000)
+  setTimeout(() => {
+    const me = document.getElementById("me")
+    me.style.display = "none"
+  }, 5000)
  
  
 }
