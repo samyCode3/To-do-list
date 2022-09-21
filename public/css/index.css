@@ -1,0 +1,164 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+}
+.to-doContainer .h1 
+{
+    width: 90%;
+    font-family: fantasy;
+    font-style: oblique;
+    color: rgba(104, 104, 252, 0.499);
+}
+body 
+{
+    background-color: rgba(0, 0, 0, 0.934);
+
+}
+.to-doContainer 
+{
+    width: 100%;
+    padding: 2rem 0;
+   
+
+}
+form 
+{
+    margin-top: 2vh;
+  background-color: #3e3e3e33; 
+  width: 30%; 
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem;
+} 
+form .to-input 
+{
+ padding: 6rem 0;
+ display: flex;
+ align-items: center;
+ width: 100%;
+
+}
+.to-input-space input 
+{
+    width: 300px;
+    height: 6vh;
+    margin-top: 2vh;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 8px;
+}
+.to-input-space .btn 
+{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+   
+}
+.btn button 
+{
+ padding: 10px 30px;
+ border: none;
+ border-radius: 5px;
+}
+.btn button:hover 
+{
+background-color: rgba(0, 0, 255, 0.431);
+color: white;
+cursor: pointer;
+}
+.error 
+{
+width: 70%;
+background-color: red;
+/* display: none; */
+}
+.success
+{
+width: 70%;
+background-color: rgba(0, 128, 0, 0.388);
+/* display: none; */
+}
+#err-text 
+{
+    text-align: center;
+}
+.link-class 
+{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.541);
+    padding: 10px 20px;
+    border-radius: 5px;
+} 
+.contanier 
+{
+    width: 100%;
+    padding: 3rem 0;
+   
+}
+.dev-container 
+{
+    width : 90%; 
+    display : flex;
+    flex-wrap : wrap;
+    align-items : flex-end;
+    color : white
+     
+}
+.talk-task 
+{
+    background-color: rgba(0, 0, 0, 0.612);
+    width: 350px; 
+    display : inline-block;
+    align-items : flex-end;
+    margin-top: 2rem;
+    padding: 3rem 0;
+    overflow: auto;
+    
+}
+.talk-task p 
+{
+    padding: 1vh 40px ;
+    font-style: oblique; 
+
+   
+}
+.talk-task span 
+{
+    font-family: fantasy;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.671);
+}
+.talk-task #taskHub 
+{
+    width: 40%;
+    height: 5vh;
+    border: none;
+    background-color: rgba(67, 67, 241, 0.223);
+    color: white;
+    font-style: oblique; 
+    margin-left: 7vh;
+   
+}
+.search  
+{
+    display : flex;
+    align-items: center;
+    width: 100%;
+}
+.search input 
+{
+    width: 350px;
+    height: 50px;
+    border: none;
+    padding: 0 4px;
+    background-color: #3e3e33;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    form 
+    {
+        width: 90%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+   <link rel="stylesheet" href="css/index.css">
+  </head>
+
+  <body>
+       <div class="to-doContainer">
+        <center>
+            <h1 class="h1">To do App</h1>            
+           </center>
+           <form onsubmit="return false" id="form">
+        <div class="to-input">
+        
+            <div class="to-input-space">
+                <div class="error" id="err">
+                   <p id="err-text"></p>
+                    </div>
+                <div class="success" id="success">
+                   <p id="err-text"></p>
+                    </div>
+                <div>
+                    <p Style="color:white">Enter Task: </p>
+                    <input type="text" name="todoname" id="todoname" placeholder="Add  Task" required>
+                </div>
+                <div>
+                    <p Style="color:white">Enter Starting Time: </p>
+                    <input type="time" name="time" id="time" placeholder="Add Task Time" required>
+                </div>
+                <div>
+                    <p Style="color:white">Expired Time: </p>
+                    <input type="time" name="expire" id="expire" placeholder="Add Task Expired Time" required>
+                </div>
+                <div>
+                    <p Style="color:white">Description: </p>
+                    <input type="Text" name="description" id="description" placeholder="Add Task Description (Optional)">
+                </div>
+                <div class="btn">
+                    <button >Proceed</button>
+                </div>
+              
+            </div>
+
+        </form>
+        </div>
+       </div>
+       <a class="link-class" href="./getTodo.html">Check Your Tasks Here</a>
+       </div>
+
+       <script src="js/index.js"></script>
+  </body>
+</html>
